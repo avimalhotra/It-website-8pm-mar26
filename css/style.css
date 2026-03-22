@@ -32,8 +32,10 @@ body{
 .justify-space-between{ justify-content: space-between;}
 .justify-center{ justify-content: center;}
 .justify-right{ justify-content: right;}
-.op-60{ opacity: 0.6;}
 .img-resp{ max-width: 100%; height: auto;}
+.text-center{ text-align: center;}
+.op6{ opacity: 0.6;}
+.gap20{ gap: 2rem;}
 
 .row{
      display: grid;
@@ -53,14 +55,55 @@ header{ padding: 6rem 0;}
 header a{ color: inherit; white-space:nowrap }
 header nav ul{ gap: 3rem;}
 header nav a{ font-size: 14px; font-weight: 600;}
-.banner{}
 .banner-text{ padding-right: 137px;}
 .banner h2{ font-size: 28px; font-weight: 600; }
 .banner p{ line-height: 1.7; margin: 3rem 0 4rem; }
 .banner a{ display: block; font-size: 16px; font-weight: 600; color: var(--black); background: var(--white); width: 185px; line-height: 50px; text-align: center; border-radius: 5px; }
 
 
-.wrap-2{ background: var(--white); color: var(--black); padding: 50px 0;}
+.wrap-2{ background: var(--white); color: var(--black); padding: 100px 0; }
+main h2{ font-size: 20px; font-weight: 500; color: var(--blue); margin-bottom: 1rem; }
+main h2 + p{ font-size: 28px; font-weight: 700; }
+
+.service{ box-shadow: 0 0 13px #0000001a; padding: 45px 60px 41px 30px; border-radius: 5px; margin-top: 40px; position: relative; }
+.service h3{ font-size: 20px; font-weight: 600;}
+.service p{ font-size: 14px; opacity: 0.6; margin: 2rem 0 3rem; }
+.service a{ font-size: 14px; color: inherit;}
+.service.bg-active{ background: var(--blue); color: #fff;}
+.service.active::before{ content: ""; position: absolute; height: 15px; left: 0; right: 0; top: 0; background: var(--blue); border-radius: 5px 5px 0 0;}
+
+.info{ text-align: center; margin: 10rem 0;}
+.info b{ font-size: 24px; font-weight: 600;}
+.info small{ font-size: 14px; font-weight: 500;}
+
+
+.about{margin: 10rem 0;}
+.about .op6{margin: 2rem 0 3rem;}
+.about ul{ list-style: disc; padding-left: 3rem; }
+
+.our-work{ margin: 10rem 0;}
+.accordion{ margin-top: 40px;}
+.accordion .collapse{ display: none;}
+.accordion li.active .collapse{ display: block;}
+.accordion a.vert{ display: block; height: 300px; writing-mode: sideways-lr; flex-shrink: 0; text-align: center; line-height: 81px; box-shadow: 0 0 18px #0000001a; font-size: 24px; font-weight: 500; color: var(--blue); border: 2px solid transparent; border-radius: 5px; }
+.accordion li.active a{ border-color: var(--blue); }
+.accordion-img{ flex-shrink: 0;}
+.accordion h3{ font-size: 24px; font-weight: 500;}
+.accordion p{ font-size: 14px; opacity: .6; margin: 1rem 0 2rem;}
+.accordion .more{ display: block; line-height: 51px; width: 184px; text-align: center; background: var(--blue); color: var(--white); border-radius: 5px; }
+
+
+.testimonial{ margin: 10rem 0;}
+.review{ margin-top: 4rem; text-align: center;}
+.review-top{ padding: 75px 64px 0; box-shadow: 0 0 18px #0000001a; }
+.bg-yellow{ color: var(--yellow);}
+.bg-gray{ color: var(--gray);}
+.review img{ transform: translateY(34px);}
+.review h3{ margin-top: 54px; }
+
+.project{ margin: 10rem 0;}
+
+.team{ margin: 10rem 0;}
 
 
 .wrap-3{ background: var(--blue); color: var(--white); padding: 50px 0;}
@@ -68,7 +111,8 @@ header nav a{ font-size: 14px; font-weight: 600;}
 
 
 @media screen and (max-width:1279px){
-.banner-text{ padding-right: 20px;}
+     .banner-text{ padding-right: 20px;}
+     .service{ padding: 45px 15px 41px 15px;}
 }
 
 @media screen and (max-width:980px){
@@ -80,6 +124,9 @@ header nav a{ font-size: 14px; font-weight: 600;}
      .col-t-o-before{ order: -1; }
      header nav ul{gap: 2rem;}
      .banner figure{ justify-content: center; }
+     .service{padding: 45px 60px 41px 80px;}
+     .accordion img{ width: 120px;}
+     .review-top{ padding: 75px 24px 0;}
 }
 
 @media screen and (max-width:767px){
@@ -89,6 +136,11 @@ header nav a{ font-size: 14px; font-weight: 600;}
      .col-m-4{ grid-column: span 4;}
      .col-m-6{ grid-column: span 6;}
      .col-m-12{ grid-column: span 12;}
+     .service{padding: 45px 40px 41px 60px;}
+     .accordion > ul{ flex-flow: column;}
+     .accordion li > .flex{ flex-flow: column;}
+     .accordion a.vert{ line-height: 85px; width: 100%; writing-mode: horizontal-tb; height: auto; }
+     .accordion img{ width: 220px;}
 }
 
 @media screen and (max-width:460px){
@@ -97,4 +149,7 @@ header nav a{ font-size: 14px; font-weight: 600;}
      .col-p-4{ grid-column: span 4;}
      .col-p-6{ grid-column: span 6;}
      .col-p-12{ grid-column: span 12;}
+     .service{padding: 45px 50px 41px 60px;}
+     .accordion .collapse .flex{ flex-flow: column;}
+     .accordion img{ width: 100%;}
 }
