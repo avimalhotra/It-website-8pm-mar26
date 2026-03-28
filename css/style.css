@@ -63,7 +63,7 @@ header nav a{ font-size: 14px; font-weight: 600;}
 
 .wrap-2{ background: var(--white); color: var(--black); padding: 100px 0; }
 main h2{ font-size: 20px; font-weight: 500; color: var(--blue); margin-bottom: 1rem; }
-main h2 + p{ font-size: 28px; font-weight: 700; }
+main h2 + p{ font-size: 28px !important; line-height: 1.5 !important; font-weight: 700; }
 
 .service{ box-shadow: 0 0 13px #0000001a; padding: 45px 60px 41px 30px; border-radius: 5px; margin-top: 40px; position: relative; }
 .service h3{ font-size: 20px; font-weight: 600;}
@@ -102,12 +102,24 @@ main h2 + p{ font-size: 28px; font-weight: 700; }
 .review h3{ margin-top: 54px; }
 
 .project{ margin: 10rem 0;}
+.project-content{ margin-left: 70px;}
+.project p{ font-size: 14px; line-height: 25px; margin: 25px 0;}
+.project a{ display: inline-block; width: 214px; line-height: 51px; background: var(--blue); color: #fff; border-radius: 5px; text-align: center;}
 
-.team{ margin: 10rem 0;}
+.team{ margin: 10rem 0; text-align: center;}
+.team-member{ padding: 5px; box-shadow: 0 0 18px #0000001a; border-radius: 5px; border: 2px solid transparent; margin-top: 40px; }
+.social{ justify-content: center; gap: 50px; margin: 40px 0 60px; }
+.team h3{ font-size: 24px; font-weight: 500; margin: 20px 0;}
+.team small{ font-size: 16px;}
+.team-member:hover{ border-color: var(--blue);}
 
 
-.wrap-3{ background: var(--blue); color: var(--white); padding: 50px 0;}
-
+.wrap-3{ background: var(--blue); color: var(--white); padding: 60px 0;}
+.footer-top{ margin-bottom: 40px;}
+.footer-top p{ color: var(--white); margin-right: 50px;}
+.footer-top a{ color: inherit; line-height: 40px;}
+.footer-top h3{ color: var(--gray); font-size: 18px; font-weight: 500; margin-bottom: 20px;}
+.footer-bottom{ color: var(--gray);}
 
 
 @media screen and (max-width:1279px){
@@ -152,4 +164,5 @@ main h2 + p{ font-size: 28px; font-weight: 700; }
      .service{padding: 45px 50px 41px 60px;}
      .accordion .collapse .flex{ flex-flow: column;}
      .accordion img{ width: 100%;}
+     .project-content{ margin-left: 0;}
 }
