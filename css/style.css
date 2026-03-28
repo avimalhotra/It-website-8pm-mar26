@@ -118,8 +118,8 @@ main h2 + p{ font-size: 28px !important; line-height: 1.5 !important; font-weigh
 .footer-top{ margin-bottom: 40px;}
 .footer-top p{ color: var(--white); margin-right: 50px;}
 .footer-top a{ color: inherit; line-height: 40px;}
-.footer-top h3{ color: var(--gray); font-size: 18px; font-weight: 500; margin-bottom: 20px;}
-.footer-bottom{ color: var(--gray);}
+.footer-top h3{ color: var(--white); font-size: 18px; font-weight: 500; margin-bottom: 20px;}
+.footer-bottom{ color: var(--white);}
 
 
 @media screen and (max-width:1279px){
@@ -139,6 +139,7 @@ main h2 + p{ font-size: 28px !important; line-height: 1.5 !important; font-weigh
      .service{padding: 45px 60px 41px 80px;}
      .accordion img{ width: 120px;}
      .review-top{ padding: 75px 24px 0;}
+     .social{gap: 2rem;}
 }
 
 @media screen and (max-width:767px){
@@ -165,4 +166,5 @@ main h2 + p{ font-size: 28px !important; line-height: 1.5 !important; font-weigh
      .accordion .collapse .flex{ flex-flow: column;}
      .accordion img{ width: 100%;}
      .project-content{ margin-left: 0;}
+     .footer-bottom .flex{ flex-flow: column; }
 }
