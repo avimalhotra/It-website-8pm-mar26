@@ -166,7 +166,7 @@ main h2 + p{ font-size: 28px !important; line-height: 1.5 !important; font-weigh
      .accordion a.vert{ line-height: 85px; width: 100%; writing-mode: horizontal-tb; height: auto; }
      .accordion img{ width: 220px;}
      .navbar{ display: inline-block; }
-     nav{ position: absolute; top: 12rem; right: 1rem; left: 1rem; text-align: right;  background: #132577dd;}
+     nav{ position: absolute; top: 12rem; right: 1rem; left: 1rem; text-align: right;  background: #132577dd; z-index: 1;}
      header nav ul{ flex-flow: column; gap: 1rem; }    
 }
 
