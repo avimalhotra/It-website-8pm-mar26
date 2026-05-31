@@ -54,11 +54,19 @@ body{
 header{ padding: 6rem 0;}
 header a{ color: inherit; white-space:nowrap }
 header nav ul{ gap: 3rem;}
-header nav a{ font-size: 14px; font-weight: 600;}
+header nav a{ font-size: 14px; font-weight: 600; display: block;}
+.navbar{ border: 1px solid var(--white); border-radius: 5px; background: none; display: none; }
+.navbar span{ display: block; width: 60px; height: 2px; background: var(--white); margin: 5px 3px; transition: 1s; transform-origin: right center;}
+.navbar.active span:nth-child(1){ rotate: -14deg;}
+.navbar.active span:nth-child(2){ opacity: 0;}
+.navbar.active span:nth-child(3){rotate: 14deg;}
 .banner-text{ padding-right: 137px;}
 .banner h2{ font-size: 28px; font-weight: 600; }
 .banner p{ line-height: 1.7; margin: 3rem 0 4rem; }
-.banner a{ display: block; font-size: 16px; font-weight: 600; color: var(--black); background: var(--white); width: 185px; line-height: 50px; text-align: center; border-radius: 5px; }
+.banner a{ display: block; font-size: 16px; font-weight: 600; color: var(--black); background: var(--white); width: 185px; line-height: 50px; text-align: center; border-radius: 5px;}
+.banner .slick-dots li button:before{ color: #fff;}
+.banner .slick-dots li.slick-active button:before{ color: #fff; }
+
 
 
 .wrap-2{ background: var(--white); color: var(--black); padding: 100px 0; }
@@ -84,13 +92,16 @@ main h2 + p{ font-size: 28px !important; line-height: 1.5 !important; font-weigh
 .our-work{ margin: 10rem 0;}
 .accordion{ margin-top: 40px;}
 .accordion .collapse{ display: none;}
-.accordion li.active .collapse{ display: block;}
+.accordion li:first-child .collapse{ display: block;}
 .accordion a.vert{ display: block; height: 300px; writing-mode: sideways-lr; flex-shrink: 0; text-align: center; line-height: 81px; box-shadow: 0 0 18px #0000001a; font-size: 24px; font-weight: 500; color: var(--blue); border: 2px solid transparent; border-radius: 5px; }
 .accordion li.active a{ border-color: var(--blue); }
+.accordion li:hover a{ box-shadow: 0 0 18px #0006; }
 .accordion-img{ flex-shrink: 0;}
 .accordion h3{ font-size: 24px; font-weight: 500;}
 .accordion p{ font-size: 14px; opacity: .6; margin: 1rem 0 2rem;}
-.accordion .more{ display: block; line-height: 51px; width: 184px; text-align: center; background: var(--blue); color: var(--white); border-radius: 5px; }
+.accordion .more{ display: block; line-height: 51px; width: 184px; text-align: center; background: var(--blue); color: var(--white); border-radius: 5px;}
+
+
 
 
 .testimonial{ margin: 10rem 0;}
@@ -154,6 +165,9 @@ main h2 + p{ font-size: 28px !important; line-height: 1.5 !important; font-weigh
      .accordion li > .flex{ flex-flow: column;}
      .accordion a.vert{ line-height: 85px; width: 100%; writing-mode: horizontal-tb; height: auto; }
      .accordion img{ width: 220px;}
+     .navbar{ display: inline-block; }
+     nav{ position: absolute; top: 12rem; right: 1rem; left: 1rem; text-align: right;  background: #132577dd;}
+     header nav ul{ flex-flow: column; gap: 1rem; }    
 }
 
 @media screen and (max-width:460px){

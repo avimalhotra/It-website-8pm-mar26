@@ -10,12 +10,16 @@
      <meta name="description" content="IT Website design built using Figma and Custom  CSS 12 Grid layout">
      
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 </head>
 <body>
      <div class="wrap-1">
           <div class="container">
                <header class="flex justify-space-between align-center">
                     <h1><a href="index.html">IT Website</a></h1>
+                    <button class="navbar"><span></span><span></span><span></span></button>
                     <nav>
                          <ul class="flex">
                               <li><a href="index.html">Home</a></li>
@@ -29,18 +33,54 @@
                     </nav>
                </header>
                <div class="banner" role="banner">
-                    <div class="row align-center">
-                         <div class="col-6 col-t-12">
-                              <div class="banner-text">
-                                   <h2>Software solution providers that help brands thrive and stand out</h2>
-                                   <p>Since 2014, we have been exploring the world of design and development offering our expertise in web and mobile. It is perfect fusion of innovation, development and execution at one place.</p>
-                                   <a href="">EXPLORE MORE</a>
+                    <div class="slider">
+                         <div class="slide">
+                              <div class="row align-center">
+                                   <div class="col-6 col-t-12">
+                                        <div class="banner-text">
+                                             <h2>Software solution providers that help brands thrive and stand out</h2>
+                                             <p>Since 2014, we have been exploring the world of design and development offering our expertise in web and mobile. It is perfect fusion of innovation, development and execution at one place.</p>
+                                             <a href="">EXPLORE MORE 1</a>
+                                        </div>
+                                   </div>
+                                   <div class="col-6 col-t-12 col-t-o-before">
+                                        <figure class="flex justify-right">
+                                             <img src="img/service-icons.webp" srcset="img/service-icons-2x.webp 1.25x" alt="service icons" width="535" height="499" class="img-resp">
+                                        </figure>
+                                   </div>
                               </div>
                          </div>
-                         <div class="col-6 col-t-12 col-t-o-before">
-                              <figure class="flex justify-right">
-                                   <img src="img/service-icons.webp" srcset="img/service-icons-2x.webp 1.25x" alt="service icons" width="535" height="499" class="img-resp">
-                              </figure>
+                         <div class="slide">
+                              <div class="row align-center">
+                                   <div class="col-6 col-t-12">
+                                        <div class="banner-text">
+                                             <h2>Software solution providers that help brands thrive and stand out</h2>
+                                             <p>Since 2014, we have been exploring the world of design and development offering our expertise in web and mobile. It is perfect fusion of innovation, development and execution at one place.</p>
+                                             <a href="">EXPLORE MORE 2</a>
+                                        </div>
+                                   </div>
+                                   <div class="col-6 col-t-12 col-t-o-before">
+                                        <figure class="flex justify-right">
+                                             <img src="img/service-icons.webp" srcset="img/service-icons-2x.webp 1.25x" alt="service icons" width="535" height="499" class="img-resp">
+                                        </figure>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="slide">
+                              <div class="row align-center">
+                                   <div class="col-6 col-t-12">
+                                        <div class="banner-text">
+                                             <h2>Software solution providers that help brands thrive and stand out</h2>
+                                             <p>Since 2014, we have been exploring the world of design and development offering our expertise in web and mobile. It is perfect fusion of innovation, development and execution at one place.</p>
+                                             <a href="">EXPLORE MORE 3</a>
+                                        </div>
+                                   </div>
+                                   <div class="col-6 col-t-12 col-t-o-before">
+                                        <figure class="flex justify-right">
+                                             <img src="img/service-icons.webp" srcset="img/service-icons-2x.webp 1.25x" alt="service icons" width="535" height="499" class="img-resp">
+                                        </figure>
+                                   </div>
+                              </div>
                          </div>
                     </div>
                </div>
@@ -152,10 +192,9 @@
                               </li>
                               <li>
                                    <div class="flex gap20">
-                                   <a class="vert" href="">Our Company</a>
-                                   <div class="flex">
+                                        <a class="vert" href="">Our Company</a>
                                         <div class="collapse">
-                                             <div class="flex align-center gap20">
+                                             <div class="flex gap20 align-center">
                                                   <div class="accordion-img">
                                                        <img src="img/mission.webp" srcset="img/mission-2x.webp 1.25x" alt="our mission" width="295" height="300" loading="lazy" class="img-resp">
                                                   </div>
@@ -167,14 +206,12 @@
                                              </div>
                                         </div>
                                    </div>
-                                   </div>
                               </li>
                               <li>
                                    <div class="flex gap20">
-                                   <a class="vert" href="">Our Customer</a>
-                                   <div class="flex">
+                                        <a class="vert" href="">Our Customer</a>
                                         <div class="collapse">
-                                             <div class="flex align-center gap20">
+                                             <div class="flex gap20 align-center">
                                                   <div class="accordion-img">
                                                        <img src="img/mission.webp" srcset="img/mission-2x.webp 1.25x" alt="our mission" width="295" height="300" loading="lazy" class="img-resp">
                                                   </div>
@@ -185,7 +222,6 @@
                                                   </div>
                                              </div>
                                         </div>
-                                   </div>
                                    </div>
                               </li>
                          </ul>
@@ -362,6 +398,31 @@
                </div>
           </div>
      </footer>
-  
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$(function(){
+     $(".navbar").click(function(){
+          $(this).toggleClass("active");
+          $("nav").slideToggle();
+     });
+
+     $(".accordion .vert").click(function(e){
+          e.preventDefault();
+          $(".accordion li").removeClass("active");
+          $(this).parent().parent().addClass("active");
+          $(".collapse").fadeOut(0);
+          $(this).next().fadeIn();
+     });
+
+     $(".slider").slick({
+          autoplay:true,
+          autoplaySpeed:5000,
+          arrows:false,
+          dots:true,
+     });
+
+});     
+</script>  
 </body>
 </html>
